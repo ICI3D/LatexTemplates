@@ -1,6 +1,6 @@
 \documentclass{beamer}
 
-\input{ici3d.tex}
+\input{ici3dTemplate.tex}
 \input{bulletspace.tex}
 
 \usepackage{graphicx,xspace}
@@ -9,37 +9,77 @@
 \usepackage{url}
 
 \begin{document}
+
+\title{ICI3D \LaTeX\ example}
+\subtitle{Subtitle is optional}
+\author{Jonathan Dushoff}
+\date{ICI3D 2017}
+\newcommand{\years}{2017}
+
+\input{ici3dTitle.tex}
+
 \begin{frame}
 
-\frametitle{How do we use statistics}\begin{itemize}
+\frametitle{Goals}
 
-\item We use statistics to confirm effects, estimate parameters, and
-	predict outcomes
+\begin{itemize}
 
-\item It usually rains when I'm in Cape Town, but mostly on Sunday\begin{itemize}
+\item Make a template
 
-\item \emph{Confirmation:} In Cape Town, it rains more on Sundays than
-		other days
+\item Make a clear example
 
-\item \emph{Estimation:} In Cape Town, the \emph{odds} of rain on
-		Sunday are 1.6--2.2 times higher than on other days
 
-\item \emph{Prediction:} I am confident that it will rain at least one
-		Sunday the next time I go\end{itemize}\end{itemize}
+
+\end{itemize}
+
+\end{frame}
+\begin{frame}
+
+\frametitle{How do we use statistics}
+
+\begin{itemize}
+
+	\item We use statistics to confirm effects, estimate parameters, and
+		predict outcomes
+
+	\item It usually rains when I'm in Cape Town, but mostly on Sunday
+
+	\begin{itemize}
+
+		\item \emph{Confirmation:} In Cape Town, it rains more on Sundays than
+				other days
+
+		\item \emph{Estimation:} In Cape Town, the \emph{odds} of rain on
+				Sunday are 1.6--2.2 times higher than on other days
+
+		\item \emph{Prediction:} I am confident that it will rain at least one
+				Sunday the next time I go
+
+	\end{itemize}
+
+\end{itemize}
+
 \end{frame}
 
 \begin{frame}
 
-
 \frametitle{Raining in Cape Town}
 
-\begin{columns}[c] \column{0.54\textwidth} \small\begin{itemize}
+\begin{columns}[c] \column{0.54\textwidth} \small
 
-\item How we interpret data like this necessarily depends on assumptions:\begin{itemize}
+\begin{itemize}
 
-\item Is it likely our observations occured by chance?
+	\item How we interpret data like this necessarily depends on assumptions:
 
-\item Is it likely they \emph{didn't}?\end{itemize}\end{itemize}
+	\begin{itemize}
+
+		\item Is it likely our observations occured by chance?
+
+		\item Is it likely they \emph{didn't}?
+
+	\end{itemize}
+
+\end{itemize}
 
 \column{0.4\textwidth}
 
@@ -49,5 +89,7 @@
 
 \end{columns}
 \end{frame}
+
+\input{ici3dClose.tex}
 
 \end{document}
