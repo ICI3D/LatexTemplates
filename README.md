@@ -10,4 +10,4 @@ To use:
 
 * Replace the content
 
-The example file is rendered at 
+You can see [a rendered version of the example file](https://github.com/ICI3D/LatexTemplates/blob/master/git_push/example.pdf).
