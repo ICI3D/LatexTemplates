@@ -39,6 +39,16 @@ attrib.png:
 
 ######################################################################
 
+## Weirdness
+
+# Want things to work here, but they need to be set up to work when this is a subdirectory
+
+LatexTemplates/%: % LatexTemplates 
+	$(copy)
+
+LatexTemplates:
+	$(mkdir)
+
 ### Makestuff
 
 ## Change this name to download a new version of the makestuff directory
