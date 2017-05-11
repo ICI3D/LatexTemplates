@@ -2,7 +2,7 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: example.pdf 
+target pngtarget pdftarget vtarget gptarget acrtarget: example.pdf 
 
 ##################################################################
 
@@ -38,6 +38,16 @@ attrib.png:
 	wget -O $@ "http://creativecommons.org.nz/wp-content/uploads/2014/04/by.large_1-150x150.png"
 
 ######################################################################
+
+## Weirdness
+
+# Want things to work here, but they need to be set up to work when this is a subdirectory
+
+LatexTemplates/%: % LatexTemplates 
+	$(copy)
+
+LatexTemplates:
+	$(mkdir)
 
 ### Makestuff
 
