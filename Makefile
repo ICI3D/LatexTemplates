@@ -19,7 +19,7 @@ include stuff.mk
 
 Sources += $(wildcard *.tex)
 
-Sources += eight.jpg ICI3D_logo.png AIMS.jpg uga.png sacema.png
+Sources += eight.jpg bar.pdf sponsors.pdf top.pdf
 
 example.pdf: example.tex
 
