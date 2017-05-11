@@ -23,9 +23,7 @@ Sources += eight.jpg bar.pdf sponsors.pdf top.pdf
 
 example.pdf: example.tex
 
-example.pdf: bulletspace.tex ici3dClose.tex ici3dTemplate.tex ici3dTitle.tex
-
-## This is slightly wrong, but very convenient
+## This is slightly wrong (because I have make rules and shouldn't need to commit)
 Sources += rights.png noncom.png attrib.png
 
 rights.png:
@@ -58,4 +56,4 @@ LatexTemplates:
 -include $(ms)/visual.mk
 
 # -include $(ms)/wrapR.mk
--include $(ms)/newlatex.mk
+-include $(ms)/flextex.mk
