@@ -6,7 +6,6 @@ target pngtarget pdftarget vtarget gptarget acrtarget: example.pdf
 
 ##################################################################
 
-
 # make files
 
 Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
@@ -41,6 +40,7 @@ attrib.png:
 
 # Want things to work here, but they need to be set up to work when this is a subdirectory
 
+## Why is this sort of chaining and sort of not?
 LatexTemplates/%: % LatexTemplates 
 	$(copy)
 

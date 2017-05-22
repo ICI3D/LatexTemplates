@@ -4,7 +4,12 @@
 
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}{
-	\includegraphics[width=\textwidth]{LatexTemplates/bar.pdf}
+	\vbox{
+		\hfill
+		\usebeamerfont{framenumber}\insertframenumber/\inserttotalframenumber
+		\hspace{2ex}
+	}
+	\noindent\includegraphics[width=\textwidth]{LatexTemplates/bar.pdf}
 }
 
 \newcommand{\topBar}{
