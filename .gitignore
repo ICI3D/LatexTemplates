@@ -1,5 +1,13 @@
-commit.txt
+LatexTemplates/
+
+commit.time
 .*.sw*
+
+*.deps
+*.nav
+*.reqs
+*.snm
+*.toc
 
 *.pdf
 
