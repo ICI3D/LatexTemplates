@@ -40,17 +40,9 @@ attrib.png:
 
 # Want things to work here, but they need to be set up to work when this is a subdirectory
 
-## Why is this sort of chaining and sort of not?
-LatexTemplates/%: % LatexTemplates 
-	$(copy)
-
-LatexTemplates:
-	$(mkdir)
+## Eliminating 2018 Jan 05 (Fri)
 
 ### Makestuff
-
-## Change this name to download a new version of the makestuff directory
-# Makefile: start.makestuff
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
