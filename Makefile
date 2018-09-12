@@ -8,9 +8,22 @@ target pngtarget pdftarget vtarget gptarget acrtarget: example.pdf
 
 # make files
 
-Sources = Makefile .ignore README.md sub.mk LICENSE.md
-include sub.mk
+Sources = Makefile .ignore README.md LICENSE.md
+Ignore += .gitignore
 # include $(ms)/perl.def
+
+msrepo = https://github.com/dushoff
+ms = makestuff
+-include $(ms)/os.mk
+
+Sources += $(ms)
+Makefile: $(ms) $(ms)/Makefile
+$(ms):
+	git submodule add -b master $(msrepo)/$(ms)
+
+$(ms)/%.mk: $(ms) $(ms)/Makefile ;
+$(ms)/Makefile:
+	git submodule update -i
 
 ##################################################################
 

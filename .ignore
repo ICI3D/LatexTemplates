@@ -3,9 +3,3 @@ local.mk
 target.mk
 .*.sw*
 make.log
-.gitignore 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 0fa7a8161697f2859ceaa92f3932b30efcfde8ac
