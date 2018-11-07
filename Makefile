@@ -8,7 +8,7 @@ target pngtarget pdftarget vtarget gptarget acrtarget: example.pdf
 
 # make files
 
-Sources = Makefile .ignore README.md LICENSE.md
+Sources = Makefile README.md LICENSE.md
 Ignore += .gitignore
 # include $(ms)/perl.def
 
