@@ -1,33 +1,14 @@
-# LatexTemplates
-### Hooks for the editor to set the default target
+## This is LatexTemplates, a screens project directory
+
 current: target
+-include target.mk
 
-target pngtarget pdftarget vtarget gptarget acrtarget: example.pdf 
+# include makestuff/perl.def
 
-##################################################################
+######################################################################
 
-# make files
-
-Sources = Makefile README.md LICENSE.md
-Ignore += .gitignore
-# include $(ms)/perl.def
-
-msrepo = https://github.com/dushoff
-ms = makestuff
--include $(ms)/os.mk
-
-Sources += $(ms)
-Makefile: $(ms) $(ms)/Makefile
-$(ms):
-	git submodule add -b master $(msrepo)/$(ms)
-
-$(ms)/%.mk: $(ms) $(ms)/Makefile ;
-$(ms)/Makefile:
-	git submodule update -i
-
-##################################################################
-
-## Content
+vim_session:
+	bash -cl "vmt"
 
 Sources += $(wildcard *.tex)
 
@@ -49,16 +30,25 @@ attrib.png:
 
 ######################################################################
 
-## Weirdness
-
-# Want things to work here, but they need to be set up to work when this is a subdirectory
-
-## Eliminating 2018 Jan 05 (Fri)
-
 ### Makestuff
 
--include $(ms)/git.mk
--include $(ms)/visual.mk
+Sources += Makefile
 
-# -include $(ms)/wrapR.mk
--include $(ms)/flextex.mk
+## Sources += content.mk
+## include content.mk
+
+Ignore += makestuff
+msrepo = https://github.com/dushoff
+Makefile: makestuff/Makefile
+makestuff/Makefile:
+	git clone $(msrepo)/makestuff
+	ls $@
+
+ms = makestuff
+-include makestuff/os.mk
+
+-include makestuff/texdeps.mk
+
+-include makestuff/git.mk
+-include makestuff/visual.mk
+-include makestuff/projdir.mk
