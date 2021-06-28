@@ -16,6 +16,18 @@ Sources += eight.jpg bar.pdf sponsors.pdf top.pdf
 
 example.pdf: example.tex
 
+######################################################################
+
+## Make a sponsor bar by cropping the template file
+Sources += template.pdf
+
+Ignore += newsponsors.pdf
+newsponsors.pdf: template.pdf Makefile
+	pdfjam --landscape $< 4 -o /dev/stdout | \
+	pdfcrop -margins "0 -542 0 0" - $@
+
+######################################################################
+
 ## This is slightly wrong (because I have make rules and shouldn't need to commit)
 Sources += rights.png noncom.png attrib.png
 
