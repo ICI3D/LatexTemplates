@@ -16,4 +16,4 @@ You can see [a rendered version of the example file](https://github.com/ICI3D/La
 
 ICI3D events and info are updated at ici3dCurrent.tex in this directory
 
-Format rules that switch content: look for *.set in your Makefile (*.txt.format in your parent directory)
+Format rules that switch content: look for *.set in talk Makefile (should point to *.txt.format here in templates)

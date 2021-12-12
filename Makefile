@@ -56,7 +56,7 @@ Sources += mmed.txt.format daidd.txt.format qmee.txt.format
 
 ### Makestuff
 
-Sources += Makefile
+Sources += Makefile README.md
 
 ## Sources += content.mk
 ## include content.mk
