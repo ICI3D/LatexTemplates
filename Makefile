@@ -48,6 +48,12 @@ Sources += comments.tex
 
 ######################################################################
 
+## Workshop settings
+
+Sources += mmed.txt.format daidd.txt.format qmee.txt.format
+
+######################################################################
+
 ### Makestuff
 
 Sources += Makefile
