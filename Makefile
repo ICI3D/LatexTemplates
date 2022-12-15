@@ -50,7 +50,7 @@ Sources += comments.tex
 
 ## Workshop settings
 
-Sources += mmed.txt.format daidd.txt.format qmee.txt.format
+Sources += mmed.txt.format daidd.txt.format qmee.txt.format plain.txt.format
 
 ######################################################################
 
