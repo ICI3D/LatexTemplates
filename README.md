@@ -1,4 +1,4 @@
-A Latex templates for ICI3D presentations.
+Latex Templates for ICI3D presentations. Pre-2022-reboot
 
 ## To borrow
 
@@ -14,6 +14,6 @@ You can see [a rendered version of the example file](https://github.com/ICI3D/La
 
 ## JD themes
 
-ICI3D events and info are updated at ici3dCurrent.tex in this directory
+ICI3D events and info are updated at ici3dCurrent.tex in this (LatexTemplates) directory
 
 Format rules that switch content: look for *.set in talk Makefile (should point to *.txt.format here in templates)
