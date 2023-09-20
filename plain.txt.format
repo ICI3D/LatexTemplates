@@ -7,3 +7,9 @@ BAYESCALC ^DEFHEAD %%
 PIPE NULLSLIDE
 OTHER NULLSLIDE
 LIT %%
+
+VSFIG \includegraphics[height=0.45\textheight]{%}\hfill\mbox{}
+VSRFIG \hfill\includegraphics[height=0.45\textheight]{%}
+
+BSFIG \includegraphics[height=0.52\textheight]{%}\hfill\mbox{}
+BSRFIG \hfill\includegraphics[height=0.38\textheight]{%}
