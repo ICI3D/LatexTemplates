@@ -1,8 +1,6 @@
 ## This is LatexTemplates, a screens project directory
 
 current: target
--include target.mk
-
 # include makestuff/perl.def
 
 ######################################################################
