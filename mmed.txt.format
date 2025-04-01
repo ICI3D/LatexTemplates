@@ -29,7 +29,8 @@ LIT %%
 PSLIDE NULLSLIDE
 draft final: ^SLIDEHEAD
 
-SHORT ^SLIDEHEAD %%
-DEFHEAD NULLSLIDE
-LONG NULLSLIDE
+## Stuff that changes from talk to talk, could cause trouble for workshops
+SHORT ^SLIDEHEAD SHORT %%
+DEFHEAD ^SLIDEHEAD %%
+LONG ^SLIDEHEAD LONG %%
 
