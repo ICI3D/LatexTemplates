@@ -1,3 +1,4 @@
+## This is the plain version of local.txt.format (use plain.set)
 THEMETITLE NULLSLIDE
 ICI3D NULLSLIDE
 PLAIN ^DEFHEAD %%
@@ -8,8 +9,16 @@ PIPE NULLSLIDE
 OTHER NULLSLIDE
 LIT %%
 
-VSFIG \includegraphics[height=0.45\textheight]{%}\hfill\mbox{}
-VSRFIG \hfill\includegraphics[height=0.45\textheight]{%}
+## Stuff that changes from talk to talk, could cause trouble for workshops
 
-BSFIG \includegraphics[height=0.52\textheight]{%}\hfill\mbox{}
-BSRFIG \hfill\includegraphics[height=0.38\textheight]{%}
+## No idea what this was for
+## DEFHEAD ^SLIDEHEAD %%
+## SLIDEHEAD seems to be like a manual version of DEFHEAD, why do I have it?
+
+## Scope out everything
+SHORT ^SLIDEHEAD SHORT %%
+LONG ^DEFHEAD LONG %%
+
+## Include everything
+SHORT ^DEFHEAD %%
+LONG ^DEFHEAD %%
