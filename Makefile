@@ -69,6 +69,7 @@ makestuff/Makefile:
 ms = makestuff
 -include makestuff/os.mk
 
+-include makestuff/texj.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
 -include makestuff/projdir.mk

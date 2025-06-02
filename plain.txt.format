@@ -14,11 +14,16 @@ LIT %%
 ## No idea what this was for
 ## DEFHEAD ^SLIDEHEAD %%
 ## SLIDEHEAD seems to be like a manual version of DEFHEAD, why do I have it?
-
-## Scope out everything
-SHORT ^SLIDEHEAD SHORT %%
-LONG ^DEFHEAD LONG %%
+## Deprecate it; it's not even different.
 
 ## Include everything
 SHORT ^DEFHEAD %%
 LONG ^DEFHEAD %%
+
+## TRACKED stuff was hidden before I guess
+TRACKED NULLSLIDE
+TRACKED ^DEFCOMM
+
+## Scope out everything
+SHORT ^DEFHEAD SHORT %%
+LONG ^DEFHEAD LONG %%
