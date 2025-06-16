@@ -1,7 +1,7 @@
 ## This is LatexTemplates, a screens project directory
 
 current: target
-# include makestuff/perl.def
+include target.mk
 
 ######################################################################
 
@@ -19,9 +19,11 @@ example.pdf: example.tex
 ## Make a sponsor bar by cropping the template file
 Sources += template.pdf
 
+## 2025 Template not usable, suppress the bottom part from ici3dClose.tex
+## If template is updated, put new template here and grab the bottom of the correct page
 Ignore += newsponsors.pdf
 newsponsors.pdf: template.pdf Makefile
-	pdfjam --landscape $< 4 -o /dev/stdout | \
+	pdfjam --landscape $< 3 -o /dev/stdout | \
 	pdfcrop -margins "0 -542 0 0" - $@
 
 ######################################################################

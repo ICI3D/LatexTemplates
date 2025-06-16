@@ -17,9 +17,12 @@ DAIDD ^OFFSLIDE
 DAIDDREP ^OFFSLIDE
 
 ## 2024 Changes to family
-SUPP ^ONSLIDE
-TRACKED ^OFFSLIDE
-REST ^OFFSLIDE
+SUPP ^OFFSLIDE
+TRACKED ^ONSLIDE %%
+
+## Where is this and what does it mean?
+## Not present in disease/
+## REST ^OFFSLIDE
 
 BAYESCALC ^DEFHEAD %%
 PIPE ^DEFHEAD %%
