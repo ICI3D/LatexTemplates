@@ -33,7 +33,11 @@ PSLIDE NULLSLIDE
 draft final: ^SLIDEHEAD
 
 ## Stuff that changes from talk to talk, could cause trouble for workshops
-SHORT ^SLIDEHEAD SHORT %%
-DEFHEAD ^SLIDEHEAD %%
-LONG ^SLIDEHEAD LONG %%
+SHORT ^ON %%
+LONG ^ON %%
+LONGREP ^REPSLIDE %%
+NTSC ^ON %%
+NTSCLINE ^ONLINE %%
+PERSONAL ^OFF %%
+RESTSLIDE ^OFF %%
 
