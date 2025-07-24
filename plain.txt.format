@@ -16,14 +16,4 @@ LIT %%
 ## SLIDEHEAD seems to be like a manual version of DEFHEAD, why do I have it?
 ## Deprecate it; it's not even different.
 
-## Include everything
-SHORT ^DEFHEAD %%
-LONG ^DEFHEAD %%
-
-## TRACKED stuff was hidden before I guess
-TRACKED NULLSLIDE
-TRACKED ^DEFCOMM
-
-## Scope out everything
-SHORT ^DEFHEAD SHORT %%
-LONG ^DEFHEAD LONG %%
+ICI3D ^OFF %%
