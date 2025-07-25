@@ -17,3 +17,4 @@ LIT %%
 ## Deprecate it; it's not even different.
 
 ICI3D ^OFF %%
+NONCTS ^OFF %%
