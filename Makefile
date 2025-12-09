@@ -1,7 +1,7 @@
 ## This is LatexTemplates, a screens project directory
 
 current: target
-include target.mk
+-include target.mk
 
 ######################################################################
 
