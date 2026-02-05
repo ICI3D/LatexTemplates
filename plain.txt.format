@@ -18,5 +18,5 @@ LIT %%
 ## OK, Shaw
 
 ICI3D ^OFF %%
-NONCTS ^OFF %%
+NONCTS ^ON %%
 NEWLIKE ^ON %%
