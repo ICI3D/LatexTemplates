@@ -6,7 +6,7 @@ current: target
 ######################################################################
 
 vim_session:
-	bash -cl "vmt"
+	bash -ic "vmt"
 
 Sources += $(wildcard *.tex)
 
