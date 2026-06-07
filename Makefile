@@ -10,10 +10,9 @@ vim_session:
 
 Sources += $(wildcard *.tex)
 
-Sources += eight.jpg bar.pdf sponsors.pdf top.pdf
+Sources += eight.jpg bar.pdf top.pdf
 
 ######################################################################
-
 
 ## this is old and intended for others
 example.pdf: example.tex
