@@ -1,4 +1,4 @@
-## This is LatexTemplates, a screens project directory
+# This is LatexTemplates, a screens project directory
 
 current: target
 -include target.mk

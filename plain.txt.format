@@ -1,11 +1,22 @@
+## This is the plain version of local.txt.format (use plain.set)
 THEMETITLE NULLSLIDE
 ICI3D NULLSLIDE
 PLAIN ^DEFHEAD %%
 QMEE ^DEFHEAD %%
+COURSE NULLSLIDE
 BAYESCALC ^DEFHEAD %%
 PIPE NULLSLIDE
 OTHER NULLSLIDE
-ICI3D NULLSLIDE
-NONCTS ^DEFHEAD %%
-NEWLIKE ^DEFHEAD %%
 LIT %%
+
+## Stuff that changes from talk to talk, could cause trouble for workshops
+
+## No idea what this was for
+## DEFHEAD ^SLIDEHEAD %%
+## SLIDEHEAD seems to be like a manual version of DEFHEAD, why do I have it?
+## Deprecate it; it's not even different.
+## OK, Shaw
+
+ICI3D ^OFF %%
+NONCTS ^OFF %%
+NEWLIKE ^ON %%
