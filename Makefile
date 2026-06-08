@@ -1,4 +1,4 @@
-## This is LatexTemplates, a screens project directory
+# This is LatexTemplates, a screens project directory
 
 current: target
 -include target.mk
@@ -10,9 +10,23 @@ vim_session:
 
 Sources += $(wildcard *.tex)
 
-Sources += eight.jpg bar.pdf sponsors.pdf top.pdf
+Sources += eight.jpg bar.pdf top.pdf
 
+######################################################################
+
+## this is old and intended for others
 example.pdf: example.tex
+
+## dushoff examples are called setup and are in individual talk directories, which seems silly, maybe link back to here
+
+mirrors += resources
+## resources/cariTemplate.pdf
+
+## This is terrible (keeps banner)
+Ignore += sponsors.pdf
+sponsors.pdf: resources/cariTemplate.pdf Makefile
+	pdfjam --papersize '{29.7cm,21cm}' $< 8 --outfile $@
+## resources/sponsors.png
 
 ######################################################################
 
@@ -71,6 +85,7 @@ makestuff/Makefile:
 ms = makestuff
 -include makestuff/os.mk
 
+-include makestuff/mirror.mk
 -include makestuff/texj.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
