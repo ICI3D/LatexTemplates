@@ -20,25 +20,19 @@ example.pdf: example.tex
 ## dushoff examples are called setup and are in individual talk directories, which seems silly, maybe link back to here
 
 mirrors += resources
-## resources/cariTemplate.pdf
 
-## This is terrible (keeps banner)
+## included in ici3dClose.tex
 Ignore += sponsors.pdf
-sponsors.pdf: resources/cariTemplate.pdf Makefile
-	pdfjam --papersize '{29.7cm,21cm}' $< 8 --outfile $@
-## resources/sponsors.png
+## pdfinfo resources/cariTemplate.pdf
+## Page size:       720 x 540 pts
+
+resources/sponsors.pdf: resources/cariTemplate.pdf
+	pdfjam --landscape $< 8 -o $@
 
 ######################################################################
 
 ## Make a sponsor bar by cropping the template file
 Sources += template.pdf
-
-## 2025 Template not usable, suppress the bottom part from ici3dClose.tex
-## If template is updated, put new template here and grab the bottom of the correct page
-Ignore += newsponsors.pdf
-newsponsors.pdf: template.pdf Makefile
-	pdfjam --landscape $< 3 -o /dev/stdout | \
-	pdfcrop -margins "0 -542 0 0" - $@
 
 ######################################################################
 
