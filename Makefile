@@ -20,6 +20,7 @@ example.pdf: example.tex
 ## dushoff examples are called setup and are in individual talk directories, which seems silly, maybe link back to here
 
 mirrors += resources
+## downcall resources/roadMaps26.pdf ##
 
 ## included in ici3dClose.tex
 Ignore += sponsors.pdf
