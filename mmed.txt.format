@@ -29,9 +29,6 @@ PIPE ^DEFHEAD %%
 SPACE \vfill
 LIT %%
 
-PSLIDE NULLSLIDE
-draft final: ^SLIDEHEAD
-
 ## Stuff that changes from talk to talk, could cause trouble for workshops
 SHORT ^ONSLIDE %%
 LONG ^ONSLIDE %%
